@@ -1,27 +1,6 @@
-// import APP_LOGO from "../assets/Logo copy.jpg"
-
-// const Header = () => {
-//     return (
-//         <>
-//             <header className=" ">
-//                 <nav className="bg-sky-200 flex justify-between px-8 items-center w-full fixed py-2 shadow z-50    ">
-//                     <div className="">
-//                         <img className="w-20 h-20 cursor-pointer rounded-full  " src={APP_LOGO} alt="" />
-//                     </div>
-//                     <div>
-//                         <ul className="flex">
-//                             <li className="mx-4 text-orange-500 text-lg cursor-pointer border-2 p-2  border-orange-500 shadow rounded-lg hover:bg-orange-100 hover:text-sky-400 ">Call Now</li>
-//                             <li className=" inset-0  mx-4 text-orange-500 text-lg cursor-pointer border-2 p-2 border-orange-500 shadow rounded-lg hover:bg-orange-100 hover:text-sky-400 ">Message Now</li>
-//                         </ul>
-//                     </div>
-//                 </nav>
-//             </header>
-//         </>
-//     )
-// }
-// export default Header
 
 
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import APP_LOGO from "../assets/Logo copy.jpg";
 
@@ -47,9 +26,12 @@ const Header = () => {
                             <button className="bg-gradient-to-r cursor-pointer from-orange-500 to-orange-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-xl hover:from-orange-600 hover:to-orange-700 transform hover:-translate-y-1 transition-all duration-300 border-2 border-orange-400">
                                 📞 Call Now
                             </button>
-                            <button className="bg-white cursor-pointer text-orange-600 font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-xl hover:bg-orange-50 transform hover:-translate-y-1 transition-all duration-300 border-2 border-orange-500">
-                                💬 Message Now
-                            </button>
+                            <Link to={"https://www.whatsapp.com/"}>
+                                <button className="bg-white cursor-pointer text-orange-600 font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-xl hover:bg-orange-50 transform hover:-translate-y-1 transition-all duration-300 border-2 border-orange-500">
+                                    💬 Message Now
+                                </button>
+                            </Link>
+
                         </div>
 
                         {/* Mobile Menu Button */}
