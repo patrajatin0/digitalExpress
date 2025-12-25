@@ -35,7 +35,7 @@ const Cards = () => {
                                 alt="Preview"
                                 className="w-auto h-auto max-w-full max-h-[90vh] rounded-lg sm:rounded-xl shadow-2xl object-contain"
                             />
-                            <button className=" absolute top-5 mx-[450px] bg-white/90 p-2 rounded-full w-12 h-12 cursor-pointer   ">
+                            <button className=" absolute top-2 sm:top-4 sm:ml-[450px] sm:w-12 sm:h-12  mx-56 bg-white/90 p-2 rounded-full w-10 h-10  cursor-pointer hover:bg-white text-gray-800 sm:p-3 shadow-lg  transition-all duration-200 hover:scale-110  ">
                                 <Link to={"https://www.whatsapp.com/"}> <i className="fa-solid fa-share text-gray-500  "></i></Link>
                             </button>
                             <button
