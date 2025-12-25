@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <>
-            <div className="flex  bg-sky-400 justify-center items-center gap-20 p-30">
+            <div className=" bg-sky-400 justify-center items-center gap-20 p-30">
                 <div >
                     <div className="flex items-center bg-orange-500 p-2 rounded-lg text-sky-50 cursor-pointer my-4 ">
                         <i class="fa-brands fa-instagram"></i>
