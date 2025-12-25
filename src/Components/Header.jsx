@@ -1,4 +1,4 @@
-import APP_LOGO from "../assets/kalyanam-logo.png"
+import APP_LOGO from "../assets/Logo copy.jpg"
 
 const Header = () => {
     return (

@@ -23,6 +23,7 @@ const Cards = () => {
                     <div>
                         <img src={selectedImage} alt="" className="w-[60vw] h-[80vh] rounded-xl   " />
                     </div>
+
                 </div>
                 )}
             </div>
