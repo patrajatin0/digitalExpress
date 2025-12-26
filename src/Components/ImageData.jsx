@@ -9,7 +9,7 @@ const Imagedata = ({ updateData, onClick }) => {
         <>
             <div>
                 <div onClick={onClick} className="cursor-pointer " >
-                    <img className="rounded-2xl w-76  " src={updateData?.img} alt="" />
+                    <img className="rounded-2xl w-76 pointer-events-none select-none  " src={updateData?.img} alt="" />
                 </div>
 
             </div>

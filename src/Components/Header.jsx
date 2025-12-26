@@ -23,8 +23,8 @@ const Header = () => {
 
                         {/* Desktop Navigation */}
                         <div className="hidden md:flex space-x-4 lg:space-x-6">
-                            <button className="bg-gradient-to-r cursor-pointer from-orange-500 to-orange-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-xl hover:from-orange-600 hover:to-orange-700 transform hover:-translate-y-1 transition-all duration-300 border-2 border-orange-400">
-                                📞 Call Now
+                            <button className="bg-gradient-to-r cursor-pointer from-orange-200 to-orange-500 text-white  font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-xl hover:from-orange-400 hover:to-orange-100 transform hover:-translate-y-1 transition-all duration-300 border-2 border-orange-400">
+                                <i className="fa-solid fa-phone"></i> <span>Call Now</span>
                             </button>
                             <Link to={"https://www.whatsapp.com/"}>
                                 <button className="bg-white cursor-pointer text-orange-600 font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-xl hover:bg-orange-50 transform hover:-translate-y-1 transition-all duration-300 border-2 border-orange-500">
@@ -64,12 +64,15 @@ const Header = () => {
                             }`}
                     >
                         <div className="flex flex-col space-y-3 px-2">
-                            <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 border-2 border-orange-400 w-full ">
+                            <button className="bg-gradient-to-r from-orange-200 to-orange-200 text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 border-2 border-orange-400 w-full ">
                                 📞 Call Now
                             </button>
-                            <button className="bg-white text-orange-600 font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300 border-2 border-orange-500 w-full ">
-                                💬 Message Now
-                            </button>
+                            <Link to={"https://www.whatsapp.com/"}>
+                                <button className="bg-white text-orange-600 font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300 border-2 border-orange-500 w-full ">
+                                    💬 Message Now
+                                </button>
+                            </Link>
+
                         </div>
                     </div>
                 </div>

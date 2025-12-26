@@ -29,13 +29,14 @@ const Cards = () => {
                         className="fixed inset-0 bg-black/70 backdrop-blur-md flex items-center justify-center z-50 p-4 sm:p-6 animate-in fade-in duration-200"
                         onClick={() => setSelectedImage(null)}
                     >
-                        <div className="relative max-w-[95vw] max-h-[90vh] animate-in zoom-in-95 duration-200 ">
+                        <div className="relative max-w-[95vw] max-h-[90vh] animate-in zoom-in-95 duration-200  ">
                             <img
+
                                 src={selectedImage}
                                 alt="Preview"
-                                className="w-auto h-auto max-w-full max-h-[90vh] rounded-lg sm:rounded-xl shadow-2xl object-contain"
+                                className="w-auto h-auto max-w-full max-h-[90vh] rounded-lg sm:rounded-xl shadow-2xl object-contain  pointer-events-none select-none "
                             />
-                            <button className=" absolute top-2 sm:top-4 sm:ml-[450px] sm:w-12 sm:h-12  mx-46 bg-white/90 p-2 rounded-full w-10 h-10  cursor-pointer hover:bg-white text-gray-800 sm:p-3 shadow-lg  transition-all duration-200 hover:scale-110  ">
+                            <button className=" md:top-4 md:right-0  absolute top-2 sm:top-4 sm:ml-[480px] sm:w-12 sm:h-12  mx-46 bg-white/90 p-2 rounded-full w-10 h-10  cursor-pointer hover:bg-white text-gray-800 sm:p-3 shadow-lg  transition-all duration-200 hover:scale-110  ">
                                 <Link to={"https://www.whatsapp.com/"}> <i className="fa-solid fa-share text-gray-500  "></i></Link>
                             </button>
                             <button
@@ -60,6 +61,7 @@ const Cards = () => {
                         </div>
                     </div>
                 )}
+
             </div>
         </>
     )
