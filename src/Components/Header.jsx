@@ -64,8 +64,9 @@ const Header = () => {
                             }`}
                     >
                         <div className="flex flex-col space-y-3 px-2">
-                            <button className="bg-gradient-to-r from-orange-200 to-orange-200 text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 border-2 border-orange-400 w-full ">
-                                📞 Call Now
+                            <button className="bg-gradient-to-r from-orange-200 to-orange-400 text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg hover:from-orange-400 hover:to-orange-100 transition-all duration-300 border-2 border-orange-400 w-full ">
+                                <i className="fa-solid fa-phone"></i> <span>Call Now</span>
+                                <span>Call Now</span>
                             </button>
                             <Link to={"https://www.whatsapp.com/"}>
                                 <button className="bg-white text-orange-600 font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg hover:bg-orange-50 transition-all duration-300 border-2 border-orange-500 w-full ">
