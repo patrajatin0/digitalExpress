@@ -16,7 +16,7 @@ const Cards = () => {
     return (
         <>
             <div>
-                <div className="  w-[450px] sm:w-full ">
+                <div className="  w-[350px] sm:w-full ">
                     <button className=" mx-4 bg-gradient-to-r from-orange-100 to-orange-500 px-5 hover:from-orange-500 rounded-lg   " onClick={() => { setall(imageList) }}>ALL</button>
                     <button className="mx-4 bg-gradient-to-r from-orange-100 to-orange-500 px-5 hover:from-orange-500 rounded-lg " onClick={() => { setall(imageList.filter((c) => (c?.categories === "DigitalPrint"))) }} >DIGITAL PRINT</button>
                     <button className="mx-4 bg-gradient-to-r from-orange-100 to-orange-500 px-5 hover:from-orange-500 rounded-lg " onClick={() => { setall(imageList.filter((c) => (c?.categories === "weddingCard"))) }}>WEDDING CARD</button>
