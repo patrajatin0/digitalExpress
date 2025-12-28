@@ -11,11 +11,20 @@ import { Link } from "react-router-dom"
 const Cards = () => {
     const [selectedImage, setSelectedImage] = useState(null)
 
+    const [all, setall] = useState(imageList)
+
     return (
         <>
-            <div className="min-h-screen p-4 sm:p-6 lg:p-8  ">
+            <div>
+                <div className="  w-[450px] sm:w-full ">
+                    <button className=" mx-4 bg-gradient-to-r from-orange-100 to-orange-500 px-5 hover:from-orange-500 rounded-lg   " onClick={() => { setall(imageList) }}>ALL</button>
+                    <button className="mx-4 bg-gradient-to-r from-orange-100 to-orange-500 px-5 hover:from-orange-500 rounded-lg " onClick={() => { setall(imageList.filter((c) => (c?.categories === "DigitalPrint"))) }} >DIGITAL PRINT</button>
+                    <button className="mx-4 bg-gradient-to-r from-orange-100 to-orange-500 px-5 hover:from-orange-500 rounded-lg " onClick={() => { setall(imageList.filter((c) => (c?.categories === "weddingCard"))) }}>WEDDING CARD</button>
+                </div>
+            </div>
+            <div className="min-h-screen p-4 sm:p-6 lg:p-8   ">
                 <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 lg:gap-6 max-w-[1600px] mx-auto">
-                    {imageList.map((c) => (
+                    {all.map((c) => (
                         <Imagedata
                             key={c?.id}
                             updateData={c}

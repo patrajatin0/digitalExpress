@@ -2,7 +2,7 @@
 
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import APP_LOGO from "../assets/Logo copy.jpg";
+import APP_LOGO from "../assets/Logo PNG.png";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ const Header = () => {
                         {/* Logo */}
                         <div className="flex-shrink-0 transition-transform hover:scale-105 duration-300">
                             <img
-                                className="w-16 h-16 sm:w-20 sm:h-20 cursor-pointer rounded-full border-4 border-white shadow-lg object-cover "
+                                className="w-52 cursor-pointer   object-cover "
                                 src={APP_LOGO}
                                 alt="Company Logo"
                             />
@@ -79,7 +79,7 @@ const Header = () => {
                 </div>
             </nav>
             {/* Spacer to prevent content from going under fixed header */}
-            <div className="h-20 sm:h-24 md:h-28"></div>
+
         </header>
     );
 };
