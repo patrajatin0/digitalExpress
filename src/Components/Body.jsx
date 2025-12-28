@@ -10,7 +10,7 @@ function Body() {
 
   return (
     <>
-      <div className='py-28 px-4 bg-orange-50'>
+      <div className='pt-28  bg-orange-50'>
 
         <Cards />
         <Footer />
