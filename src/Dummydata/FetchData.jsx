@@ -12,6 +12,12 @@ import IMG10 from "../utils/10.jpg"
 import IMG11 from "../utils/11.png"
 import IMG12 from "../utils/12.png"
 import IMG13 from "../utils/13.png"
+import IMG14 from "../utils/14.jpg"
+import IMG15 from "../utils/15.jpg"
+import IMG16 from "../utils/16.jpg"
+import IMG17 from "../utils/17.jpg"
+import IMG18 from "../utils/18.jpg"
+import IMG19 from "../utils/19.jpg"
 
 
 
@@ -81,6 +87,36 @@ export const imageList = [
         id: 13,
         categories: "DigitalPrint",
         img: IMG13
+    },
+    {
+        id: 14,
+        categories: "Personilized Gifts",
+        img: IMG14
+    },
+    {
+        id: 15,
+        categories: "Personilized Gifts",
+        img: IMG15
+    },
+    {
+        id: 16,
+        categories: "Personilized Gifts",
+        img: IMG16
+    },
+    {
+        id: 17,
+        categories: "Personilized Gifts",
+        img: IMG17
+    },
+    {
+        id: 18,
+        categories: "Personilized Gifts",
+        img: IMG18
+    },
+    {
+        id: 19,
+        categories: "Personilized Gifts",
+        img: IMG19
     },
 ]
 

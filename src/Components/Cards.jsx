@@ -17,9 +17,9 @@ const Cards = () => {
         <>
             <div>
                 <div className=" flex flex-wrap  sm:w-full ">
-                    <button className=" m-4 bg-gradient-to-r from-orange-100 to-orange-500 px-5 hover:from-orange-500 rounded-lg   " onClick={() => { setall(imageList) }}>ALL</button>
-                    <button className="m-4 bg-gradient-to-r from-orange-100 to-orange-500 px-5 hover:from-orange-500 rounded-lg " onClick={() => { setall(imageList.filter((c) => (c?.categories === "DigitalPrint"))) }} >DIGITAL PRINT</button>
-                    <button className="m-4 bg-gradient-to-r from-orange-100 to-orange-500 px-5 hover:from-orange-500 rounded-lg " onClick={() => { setall(imageList.filter((c) => (c?.categories === "weddingCard"))) }}>WEDDING CARD</button>
+                    <button className=" text-white  font-semibold m-4 bg-orange-400 px-5 hover:bg-orange-500  rounded-lg  cursor-pointer   " onClick={() => { setall(imageList.filter((c) => (c?.categories === "Personilized Gifts"))) }}>GIFT CARDS</button>
+                    <button className=" text-white  font-semibold m-4 bg-orange-400  px-5 hover:bg-orange-500  rounded-lg cursor-pointer  " onClick={() => { setall(imageList.filter((c) => (c?.categories === "DigitalPrint"))) }} >DIGITAL PRINT</button>
+                    <button className=" text-white  font-semibold  m-4 bg-orange-400 px-5 hover:bg-orange-500 rounded-lg cursor-pointer  " onClick={() => { setall(imageList.filter((c) => (c?.categories === "weddingCard"))) }}>WEDDING CARD</button>
                 </div>
             </div>
             <div className="min-h-screen p-4 sm:p-6 lg:p-8   ">
