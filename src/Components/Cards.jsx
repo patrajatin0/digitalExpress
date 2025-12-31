@@ -16,7 +16,7 @@ const Cards = () => {
 
     return (
         <>
-            <div className="flex flex-wrap"  >
+            <div className="flex flex-wrap "  >
                 <Buttons setAll={setall} imageList={imageList} />
             </div>
             <div className="min-h-screen p-4 sm:p-6 lg:p-8   ">
