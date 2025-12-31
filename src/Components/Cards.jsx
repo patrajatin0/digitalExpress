@@ -16,7 +16,7 @@ const Cards = () => {
 
     return (
         <>
-            <div className=" hidden sm:block" >
+            <div className=" " >
                 <Buttons setAll={setall} imageList={imageList} />
             </div>
             <div className="min-h-screen p-4 sm:p-6 lg:p-8   ">
