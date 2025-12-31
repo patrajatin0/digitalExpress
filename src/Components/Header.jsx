@@ -3,6 +3,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import APP_LOGO from "../assets/Logo PNG.png";
+import Buttons from './Buttons';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -74,7 +75,11 @@ const Header = () => {
                                 </button>
                             </Link>
 
+
+
+
                         </div>
+
                     </div>
                 </div>
             </nav>

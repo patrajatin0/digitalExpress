@@ -7,6 +7,7 @@ import { imageList } from "../Dummydata/FetchData"
 import Imagedata from "./ImageData"
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import Buttons from "./Buttons"
 
 const Cards = () => {
     const [selectedImage, setSelectedImage] = useState(null)
@@ -15,12 +16,8 @@ const Cards = () => {
 
     return (
         <>
-            <div>
-                <div className=" flex flex-wrap  sm:w-full ">
-                    <button className=" text-white  font-semibold m-4 bg-orange-400 px-5 hover:bg-orange-500  rounded-lg  cursor-pointer   " onClick={() => { setall(imageList.filter((c) => (c?.categories === "Personilized Gifts"))) }}>GIFT CARDS</button>
-                    <button className=" text-white  font-semibold m-4 bg-orange-400  px-5 hover:bg-orange-500  rounded-lg cursor-pointer  " onClick={() => { setall(imageList.filter((c) => (c?.categories === "DigitalPrint"))) }} >DIGITAL PRINT</button>
-                    <button className=" text-white  font-semibold  m-4 bg-orange-400 px-5 hover:bg-orange-500 rounded-lg cursor-pointer  " onClick={() => { setall(imageList.filter((c) => (c?.categories === "weddingCard"))) }}>WEDDING CARD</button>
-                </div>
+            <div className=" hidden sm:block" >
+                <Buttons setAll={setall} imageList={imageList} />
             </div>
             <div className="min-h-screen p-4 sm:p-6 lg:p-8   ">
                 <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 lg:gap-6 max-w-[1600px] mx-auto">
