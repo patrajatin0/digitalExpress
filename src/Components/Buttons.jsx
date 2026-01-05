@@ -1,10 +1,14 @@
-const Buttons = ({ setAll, imageList }) => {
+
+
+const Buttons = ({ setActiveCategory }) => {
+
     return (
         <div>
             <div className=" flex flex-wrap    ">
-                <button className=" text-white text-[8px]   m-4 bg-orange-400  hover:bg-orange-500  rounded-lg  cursor-pointer   w-[60px] text-center  " onClick={() => { setAll(imageList.filter((c) => (c?.categories === "Personilized Gifts"))) }}>GIFT CARDS</button>
-                <button className=" text-white text-[8px]  m-4 bg-orange-400  px-5 hover:bg-orange-500  rounded-lg cursor-pointer w-[80px] text-center " onClick={() => { setAll(imageList.filter((c) => (c?.categories === "DigitalPrint"))) }} >DIGITAL PRINT</button>
-                <button className=" text-white text-[8px]   m-4 bg-orange-400 px-5 hover:bg-orange-500 rounded-lg cursor-pointer w-[80px]  text-center " onClick={() => { setAll(imageList.filter((c) => (c?.categories === "weddingCard"))) }}>WEDDING CARD</button>
+                <button className="hover:animate-none animate-pulse  text-orange-400 text-[8px]   m-4 border-2 border-orange-400   rounded-full cursor-pointer w-[80px]  text-center " onClick={() => { setActiveCategory("weddingCard") }}>WEDDING </button>
+                <button className="hover:animate-none animate-pulse text-orange-400 text-[8px]   m-4  rounded-full border-2 border-orange-400  cursor-pointer   w-[60px] text-center  " onClick={() => { setActiveCategory("Personilized Gifts") }}>GIFT </button>
+                <button className=" hover:animate-none animate-pulse border-2 text-orange-400    border-orange-400   text-[8px]  m-4  px-5  rounded-full  cursor-pointer w-[80px] text-center " onClick={() => { setActiveCategory("DigitalPrint") }} >DIGITAL PRINT</button>
+
             </div>
         </div>
     )

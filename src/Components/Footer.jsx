@@ -1,10 +1,12 @@
+import APP_LOGO from "../assets/Logo PNG.png"
+
 const Footer = () => {
     return (
         <>
 
             <div className="flex flex-col bg-sky-400 justify-center items-center gap-2 p-20">
-                <div className="border-b-2 border-b-gray-300 p-4   ">
-                    <h1 className="text-4xl text-gray-300 font-mono  ">Digital Express</h1>
+                <div >
+                    <img className="w-82" src={APP_LOGO} alt="" />
                 </div>
 
                 <div className="flex flex-col md:flex md:flex-row md:gap-32 mt-10  items-center  ">

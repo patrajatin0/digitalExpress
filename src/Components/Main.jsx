@@ -5,6 +5,7 @@ import Header from "./Header.jsx";
 import ErrorComponent from "./Error.jsx";
 import Imagedata from "./ImageData.jsx";
 import Cards from "./Cards.jsx";
+
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 const Main = () => {
@@ -12,6 +13,7 @@ const Main = () => {
     <>
 
       <Header />
+
       <Outlet />
     </>
   )

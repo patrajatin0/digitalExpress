@@ -12,16 +12,17 @@ import Buttons from "./Buttons"
 const Cards = () => {
     const [selectedImage, setSelectedImage] = useState(null)
 
-    const [all, setall] = useState(imageList)
+    const [all, setall] = useState("weddingCard")
+    const activeCards = imageList.filter((c) => (c?.categories === all))
 
     return (
         <>
             <div className="flex flex-wrap "  >
-                <Buttons setAll={setall} imageList={imageList} />
+                <Buttons setActiveCategory={setall} />
             </div>
             <div className="min-h-screen p-4 sm:p-6 lg:p-8   ">
                 <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 lg:gap-6 max-w-[1600px] mx-auto">
-                    {all.map((c) => (
+                    {activeCards.map((c) => (
                         <Imagedata
                             key={c?.id}
                             updateData={c}
